@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+        <h1 id="demo"></h1>
+        <script>
+
+        function show()
+        {
+                document.write("I am a function ");
+        }
+        show(); // function calling 
+
+        document.write("<br>");
+
+        function add(a,b)
+        {
+                return a+b;
+        }
+        document.write(add(2,2));
+        document.getElementById("demo").innerHTML = add(2,2);
+
+        document.write("<br>");
+
+        var value=add(2,2);
+        document.write(" value = "+ value);
+
+        function dummy()
+        {
+                var x=10; // x is a local variable can't be acessed from outside
+        }
+
+        function default_value(a,b=1) // default value - use if don't give value in argument
+        {
+                var result=a+b;
+                document.write(" <br>addtion = "+result);
+        }
+        default_value(2,2); // arguments - value passed
+
+        </script>
+</body>
+</html>

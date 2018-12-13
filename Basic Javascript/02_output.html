@@ -1,0 +1,32 @@
+<!-- Writing into an HTML element, using innerHTML
+Writing into the HTML output using document.write()
+Writing into an alert box, using window.alert()
+Writing into the browser console, using console.log() -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+	<p id="input"></p>
+
+	<button type="button" onclick="document.write(5 + 6)">Press Here</button>
+
+	<script>
+		document.getElementById("input").innerHTML = 5 + 6;
+
+		document.write("<br>");
+
+		document.write(5 + 6);
+
+		window.alert("I am window alert");
+		//window.alert(5+5);
+
+		console.log(5 + 6);
+
+        // this is single line comment
+        /* this is multiline comment   */
+
+	</script>
+
+</body>
+</html> 

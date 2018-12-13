@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo">Please visit Microsoft and Microsoft!</p> <br>
+
+    <script>
+
+        function myFunction() 
+        {
+            var str = document.getElementById("demo").innerHTML; 
+            var txt = str.replace(/Microsoft/g,"Google");
+            document.getElementById("demo").innerHTML = txt;
+        }
+
+        var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.write(txt.length); document.write("<br>");
+
+        var str = "Please locate where 'locate' occurs!";
+        document.write(str.indexOf("locate")); document.write("<br>");
+
+        var str1 = "Please locate where 'locate' occurs!";
+        document.write(str1.lastIndexOf("locate")); document.write("<br>");
+
+        var str2 = "Please locate where 'locate' occurs!";
+        document.write(str2.search("locate")); document.write("<br>");
+
+        var text1 = "Hello World!";            // String
+        document.write(text1.toUpperCase());   // text2 is text1 converted to upper
+        document.write("<br>");
+
+        var text2 = "Hello World!";           // String
+        document.write(text2.toLowerCase());  // text2 is text1 converted to lower
+        document.write("<br>");
+
+        var text3 = "Hello";
+        var text4 = "World";
+        var text5 = text3.concat(" ", text4);
+
+        var text6 = "Hello" + " " + "World!";
+        var text7 = "Hello".concat(" ", "World!"); // join two strings
+
+        var str3 = "       Hello World!        "; // removes whitespace from both sides of a string
+        str3.trim();
+
+        str6 = "Please visit Microsoft!";
+        var value = str6.replace("Microsoft", "Google");
+        document.write(value);
+
+    </script>
+</body>
+</html>

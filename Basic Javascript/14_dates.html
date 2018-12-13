@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<script>
+
+		var d = new Date();
+
+		var d = new Date(2018, 11, 24, 10, 33, 30, 0);
+		// 7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order)
+
+		var d = new Date(2018, 11, 24, 10, 33);
+		// 5 numbers specify year, month, day, hour, and minute:
+
+		var d = new Date("October 13, 2014 11:13:00");
+
+		var d = new Date("2015-03-25");
+		var d = new Date("2015-03");
+		var d = new Date("2015");
+		var d = new Date("2015-03-25T12:00:00Z");
+		var d = new Date("03/25/2015");
+
+		var d = new Date("Mar 25 2015");
+		var d = new Date("25 Mar 2015");
+		var d = new Date("January 25 2015");
+		var d = new Date("Jan 25 2015");
+		var d = new Date("JANUARY, 25, 2015");
+
+		// Date Set methods
+
+		d.getFullYear()	// Get the year as a four digit number (yyyy)
+		d.getMonth()	// Get the month as a number (0-11)
+		d.getDate()	    // Get the day as a number (1-31)
+		d.getHours()	// Get the hour (0-23)
+		d.getMinutes()	// Get the minute (0-59)
+		d.getSeconds()	// Get the second (0-59)
+		d.getMilliseconds()	// Get the millisecond (0-999)
+		d.getTime()	    // Get the time (milliseconds since January 1, 1970)
+		d.getDay()	    // Get the weekday as a number (0-6)
+		d.Date.now()	// Get the time. ECMAScript 5
+
+	</script>
+
+</body>
+</html> 

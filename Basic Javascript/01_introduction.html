@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+
+	<p id="demo">Sorry i am not Javascript</p>
+	<button type="button" onclick="my_inside_function()"> Press Me </button>
+
+	<p id="demo1">Me not Javascript But i am controlling from an outside file </p>
+	<button type="button" onclick="my_outside_function()"> Click Me </button>
+
+    <script src="external_file.js"></script>
+	<script>
+		function my_inside_function() 
+		{
+			document.getElementById("demo").innerHTML = "Hi, I am JavaScript and i am working perfectly";
+		}
+	</script>
+
+</body>
+</html> 

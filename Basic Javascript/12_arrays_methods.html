@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<p id="demo"></p>
+
+	<script>
+
+		// Converting arrays to string
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		document.getElementById("demo").innerHTML = fruits.toString();
+
+
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		fruits.join(" * "); // output will be - Banana * Orange * Apple * Mango
+
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		fruits.pop();              // Removes the last element ("Mango") from fruits
+
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		var x = fruits.pop();      // the value of x is "Mango"
+
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		fruits.push("Kiwi");       //  Adds a new element ("Kiwi") to fruits
+
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		var x = fruits.push("Kiwi");   //  the value of x is 5
+
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		fruits[0] = "Kiwi";        // Changes the first element of fruits to "Kiwi"
+
+		// delete may leave undefined holes in the array. Use pop() or shift() instead.
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		delete fruits[0];           // Changes the first element in fruits to undefined
+
+		var myGirls = ["Cecilie", "Lone"];
+		var myBoys = ["Emil", "Tobias", "Linus"];
+		var myChildren = myGirls.concat(myBoys);     // Concatenates (joins) myGirls and myBoys
+
+		var arr1 = ["Cecilie", "Lone"];
+		var arr2 = ["Emil", "Tobias", "Linus"];
+		var arr3 = ["Robin", "Morgan"];
+		var myChildren = arr1.concat(arr2, arr3);     // Concatenates arr1 with arr2 and arr3
+
+	</script>
+
+</body>
+</html> 

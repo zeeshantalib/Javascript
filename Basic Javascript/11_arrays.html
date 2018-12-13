@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<p id="demo"></p>
+
+	<script>
+		//An array is a special variable, which can hold more than one value at a time.
+		// Syntax: var array_name = [item1, item2, ...];
+		
+		var cars = ["Saab", "Volvo", "BMW"];
+
+		var car1 = "Saab";
+		var car2 = "Volvo";
+		var car3 = "BMW";
+
+		// Arrays VS Object
+
+		// Arrays use numbers indexes to access its "elements". In this example, person[0] returns Zeeshan
+		var person = ["Zeeshan", "Talib", 46];
+
+		// Objects use names indexes to access its "members". In this example, person.firstName returns Zeeshan
+		var person = {firstName:"Zeeshan", lastName:"Talib", age:46};
+
+		var x = cars.length;   // The length property returns the number of elements
+		var y = cars.sort();   // The sort() method sorts arrays
+
+        // adding a new element in an array
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		fruits.length;                       // the length of fruits is 4
+		var first = fruits[0];
+		fruits.push("Lemon");                // adds a new element (Lemon) to fruits
+		fruits[fruits.length] = "Lemon";     // adds a new element (Lemon) to fruits
+		fruits[6] = "Lemon";                 // adds a new element (Lemon) to fruits
+
+		// show elements of an array using for loop
+
+		var fruits1, text;
+		fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+		text = "<ul>";
+		for (var i = 0; i < fruits1.length; i++) 
+		{
+			text += "<li>" + fruits1[i] + "</li>";
+		}
+		text += "</ul>";
+		document.getElementById("demo").innerHTML = text;
+
+	</script>
+
+</body>
+</html> 
