@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<p>The DOM is very useful. Will be accessed soon </p>
+	<p class="intro">The DOM (Class) is very useful.</p>
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+
+	<script>
+		document.getElementById("demo").innerHTML = "Hello World!";
+
+		var y = document.getElementsByTagName("p");
+		document.getElementById("demo1").innerHTML = 'Look at this :: '+y[0].innerHTML;
+
+		var z = document.getElementsByClassName("intro");
+		document.getElementById("demo2").innerHTML = 'Look at this :: '+z[0].innerHTML;
+/*
+ - getElementById is a method, - while innerHTML is a property
+- A property is a value that you can get or 
+set (like changing the content of an HTML element).
+- A method is an action you can do (like add or deleting an HTML element). 
+*/
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<h1 onclick="changeText(this)">Click on this text!</h1>
+
+    <p id="demo"></p>
+	<button id="myBtn"> Try it </button>
+
+	<br>	 
+
+	Enter your name: <input type="text" id="fname" onchange="myFunction()">
+
+	<script>
+		function changeText(id) 
+		{
+			id.innerHTML = "Someone Click Me !";
+		}
+
+		function displayDate() 
+		{
+			document.getElementById("demo").innerHTML = Date();
+		}
+		document.getElementById("myBtn").onclick = displayDate;
+
+		function myFunction() 
+		{
+			var x = document.getElementById("fname");
+			x.value = x.value.toUpperCase();
+		}
+	</script>
+
+</body>
+</html>
