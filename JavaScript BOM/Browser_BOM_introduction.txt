@@ -1,0 +1,29 @@
+The Browser Object Model (BOM)
+
+1 - There are no official standards for the Browser Object Model (BOM).
+
+2 - Since modern browsers have implemented (almost) the same methods and properties for JavaScript interactivity, it is often referred to, as methods and properties of the BOM.
+
+Window Size
+Two properties can be used to determine the size of the browser window.
+
+=> Both properties return the sizes in pixels:
+
+1 - window.innerHeight - the inner height of the browser window (in pixels)
+2 - window.innerWidth - the inner width of the browser window (in pixels)
+
+Other Window Methods
+
+1 - window.open() - open a new window
+2 - window.close() - close the current window
+3 - window.moveTo() -move the current window
+4 - window.resizeTo() -resize the current window
+
+Window Screen => Properties:
+
+1 - screen.width
+2 - screen.height
+3 - screen.availWidth
+4 - screen.availHeight
+5 - screen.colorDepth
+6 - screen.pixelDepth
