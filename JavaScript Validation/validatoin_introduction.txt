@@ -1,0 +1,22 @@
+Data validation is the process of ensuring that user input is clean, correct, and useful.
+
+Typical validation tasks are:
+
+1 - has the user filled in all required fields?
+2 - has the user entered a valid date?
+3 - has the user entered text in a numeric field?
+4 - Most often, the purpose of data validation is to ensure correct user input.
+
+Validation can be defined by many different methods, and deployed in many different ways.
+
+1 - Server side validation: is performed by a web server, after input has been sent to the server.
+2 - Client side validation: is performed by a web browser, before input is sent to a web server.
+
+HTML5 introduced a new HTML validation concept called constraint validation.
+
+disabled - Specifies that the input element should be disabled
+max - Specifies the maximum value of an input element
+min - Specifies the minimum value of an input element
+pattern - Specifies the value pattern of an input element
+required - Specifies that the input field requires an element
+type - Specifies the type of an input element

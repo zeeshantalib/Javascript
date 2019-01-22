@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body> 
+	<form name="myform" method="post" onsubmit="return validateform()" >  
+		Name: <input type="text" name="name">
+		<span id="name_error"></span><br/> 
+
+		Password: <input type="password" name="password">
+		<span id="password_error"> </span><br/> 
+
+		<input type="submit" value="register">  
+	</form>  
+
+	<script> 
+		function validateform()
+		{  
+			var name=document.myform.name.value;  
+			var password=document.myform.password.value;  
+
+			if (name==null || name=="")
+			{  
+				document.getElementById("name_error").innerHTML="fill name please";  
+				return false;  
+			}
+			else if(password.length<6)
+			{  
+				document.getElementById("password_error").innerHTML="password length should be greater than 6";  
+				return false;   
+			}
+			else
+			{
+				document.write("Everything is fine");   
+			} 
+		}  
+	</script>  
+</body>
+</html>

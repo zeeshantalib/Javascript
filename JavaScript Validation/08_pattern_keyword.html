@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<form>
+		
+		Name:<input type="text" name="user_name" required="true" size="5"> <br>
+
+		Email:<input type="Email" name="user_email" required="true" 
+		title="Email is not valid" 
+		pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})"> <br>
+
+		Password:<input type="password" name="user_password" 
+		pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+		title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"> <br>
+
+		Mobile:<input type="text" required pattern="03[0-9]{2}([0-9])(?!\1{6})[0-9]{6}"
+		name="user_mobile" title="03130000000" > <br>
+
+		Website:<input type="text" name="user_website" required 
+		pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$" 
+		title="Include http://www.google.com" > <br>
+		
+		<input type="submit" name="btn">
+	</form>
+<!--
+1 - email: pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})"
+
+2 - PK mobile number: pattern="03[0-9]{2}([0-9])(?!\1{6})[0-9]{6}"
+3 - website: pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$"
+
+4 - password: pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+5 - website: pattern="https?://.+" 
+
+-->
+</body>
+</html>
+
+
+
