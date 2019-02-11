@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- JSON stands for JavaScript Object Notation
+JSON is a lightweight data interchange format
+JSON is language independent *
+JSON is "self-describing" and easy to understand -->
+
+<script>
+
+	var text = '{"employees":[' +
+	'{"firstName":"John","lastName":"Doe" },' +
+	'{"firstName":"Anna","lastName":"Smith" },' +
+	'{"firstName":"Peter","lastName":"Jones" }]}';
+
+	obj = JSON.parse(text);
+	document.write(obj.employees[1].firstName + " " + obj.employees[1].lastName);
+
+	document.write("<br>");
+
+</script>
+
+// XML Extensible Markup Language
+<employees>
+	<employee>
+		<firstName>John</firstName> <lastName>Doe</lastName>
+	</employee>
+	<employee>
+		<firstName>Anna</firstName> <lastName>Smith</lastName>
+	</employee>
+	<employee>
+		<firstName>Peter</firstName> <lastName>Jones</lastName>
+	</employee>
+</employees>
+
+</body>
+</html> 
